@@ -27,16 +27,6 @@ questions = [('Оцените по шкале от 1 до 5, насколько 
              ('Оцените по шкале от 1 до 5, насколько вы чувствуете новогоднее настроение:',)]
 
 
-# In[93]:
-
-
-for question in questions:
-    cur.execute(
-        '''INSERT into questions (text) VALUES (?)''', question
-    )
-db.commit()
-
-
 # Пишем код сайта:
 
 # In[95]:
